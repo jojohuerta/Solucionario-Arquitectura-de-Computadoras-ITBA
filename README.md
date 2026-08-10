@@ -8,8 +8,7 @@ Este material fue desarrollado íntegramente por:
 *   **Email Institucional del ITBA:** [johuerta@itba.edu.ar](mailto:johuerta@itba.edu.ar)
 *   **LinkedIn:** [https://www.linkedin.com/in/jojohuerta/](https://www.linkedin.com/in/jojohuerta/)
 
-Cualquier duda, sugerencia o corrección sobre el contenido, no duden en contactarme o dejar un comentario en los documentos de Google correspondientes.
-CUalquier sugerencia o o corrección sobre el contenido, no duden en contactarme o dejar un comentario en los documentos de Google correspondientes. También puedo contestar dudas
+Cualquier sugerencia o o corrección sobre el contenido, no duden en contactarme o dejar un comentario en los documentos de Google correspondientes. También estoy abierto a contestar dudas por medio de mi contacto.
 
 ## Revisión y Agradecimientos
 
