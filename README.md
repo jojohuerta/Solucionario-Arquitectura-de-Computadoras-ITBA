@@ -1,5 +1,6 @@
-# Solucionario-Arquitectura-de-Computadoras-ITBA
-Solucionario y guía de estudios para la materia Arquitectura de Computadoras del Instituto Tecnológico de Buenos Aires. Incluye código fuente de las prácticas y enlaces a los documentos teóricos colaborativos de cada unidad.
+Solucionario y guía de estudios para la materia Arquitectura de Computadoras del Instituto Tecnológico de Buenos Aires. Incluye código fuente de las prácticas y enlaces a los documentos teóricos colaborativos de cada unidad, conteniendo resoluciones de la ejercitacion brindada por la Cátedra.
+
+## Autoría y Contacto
 
 Este material fue desarrollado íntegramente por:
 
@@ -17,3 +18,4 @@ El contenido de este proyecto cuenta con la revisión de:
 
 **Federico Gabriel Ramos** (Docente de Arquitectura de Computadoras)
 *   **Email Institucional del ITBA:** [feramos@itba.edu.ar](mailto:feramos@itba.edu.ar)
+
