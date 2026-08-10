@@ -23,7 +23,7 @@ El contenido de este proyecto cuenta con la revisión de:
 
 Este proyecto fue creado con el objetivo de brindar un material de apoyo integral para los ayudantes de la materia. El repositorio funciona mediante un esquema híbrido: en GitHub se encuentra todo el código fuente organizado, mientras que las explicaciones, desarrollos teóricos y la posibilidad de dejar comentarios se mantienen en documentos de Google Docs vinculados dentro de cada unidad.
 
-*Nota: La Unidad 0 (Setup del ambiente de trabajo) ha sido intencionalmente omitida de este repositorio, ya que consideramos que la documentación oficial provista por la cátedra es lo suficientemente completa y detallada para realizar la preparación del entorno.*
+*Nota: La Unidad 0 (Setup del ambiente de trabajo) ha sido intencionalmente omitida de este repositorio, ya que se considera que la documentación oficial provista por la cátedra es lo suficientemente completa y detallada para realizar la preparación del entorno.*
 
 *Nota 2: El TPE ha sido intencionalmente omitido del repositorio. Cada implementación es distinta y no hay una unica forma de hacerla correctamente. El desarrollo e implementación de estos es completamente responsabilidad de los alumnos.*
 
