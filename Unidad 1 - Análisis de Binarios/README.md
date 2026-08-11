@@ -4,7 +4,7 @@ En esta unidad se aborda el análisis estático y dinámico de archivos binarios
 
 El otro recurso a utilizar son los ejecutables presentes en el comprimido binarios.zip, así que hay que descargárselo y descomprimirlos. Si bien hay archivos en 32 bits y 64 bits, uno al usar un sistema con arquitectura de 64 bits puede ejecutar ambos. Para la resolución de los ejercicios se va a usar principalmente la versión de 32 bits.
 
-## 📝 Resolución y Desarrollo Teórico
+## Resolución y Desarrollo Teórico
 
 Toda la explicación teórica y el desarrollo paso a paso de los ejercicios se encuentra centralizado en el siguiente documento:
 

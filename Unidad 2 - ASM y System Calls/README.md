@@ -6,7 +6,7 @@ Para el desarrollo de esta unidad, se van a encontrar subidos dos archivos compr
 *   **extras.zip:** Contiene manuales de Assembler y material complementario.
 *   **fuentes.zip:** Contiene ejercicios muy introductorios. **Es altamente recomendable** comenzar por estos archivos y entenderlos a la perfección antes de comenzar a resolver los ejercicios de la guía principal.
 
-## 📝 Resolución y Desarrollo Teórico
+## Resolución y Desarrollo Teórico
 
 Toda la explicación teórica y el desarrollo paso a paso de los ejercicios se encuentra dividido en los siguientes documentos:
 
