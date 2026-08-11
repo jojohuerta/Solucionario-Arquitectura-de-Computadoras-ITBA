@@ -6,11 +6,11 @@ El otro recurso a utilizar son los ejecutables presentes en el comprimido binari
 
 ## 📝 Resolución y Desarrollo Teórico
 
-Toda la explicación teórica, el desarrollo paso a paso de los ejercicios y el espacio para dudas se encuentra centralizado en el siguiente documento:
+Toda la explicación teórica y el desarrollo paso a paso de los ejercicios se encuentra centralizado en el siguiente documento:
 
 🔗 **[ITBA - Arquitectura de Computadoras - TP1 - Solucionario](https://docs.google.com/document/d/1WYSaNJeL5G4ijiSO8Faml-l1L0HAIaySIrr4o4d3CWs/edit?usp=sharing)**
 
 ---
-*Nota: Los archivos de código fuente correspondientes a las implementaciones prácticas de esta unidad, junto con los binarios provistos, se encuentran en la carpeta "**Código**" en este mismo directorio.*
+*Nota: Los archivos de código fuente correspondientes a las implementaciones prácticas de esta unidad se encuentran en la carpeta "**Código**" en este mismo directorio.*
 
 *Nota 2: La resolución de los ejercicios fue realizada en un entorno Linux Mint 22.1 x86_64 Cinnamon. Si bien visualmente va a haber diferencias con los entornos seteados por la cátedra, no debería haber diferencia en el comportamiento esperado.*
