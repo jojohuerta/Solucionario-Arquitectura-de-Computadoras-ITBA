@@ -1,6 +1,6 @@
 # Unidad 2: ASM y System Calls
 
-En esta unidad se va a estudiar la programación a bajo nivel, escribiendo código directamente en lenguaje Assembler x86 y  con el sistema operativo a través de **System Calls**. Para ensamblar y linkear nuestro código, estaremos utilizando las herramientas **nasm** y **ld**.
+En esta unidad se va a estudiar la programación a bajo nivel, escribiendo código directamente en lenguaje Assembler x86 y vamos a comunicarnos con el sistema operativo a través de **System Calls**. Para ensamblar y linkear nuestro código, estaremos utilizando las herramientas **nasm** y **ld**.
 
 Para el desarrollo de esta unidad, se van a encontrar subidos dos archivos comprimidos que son fundamentales:
 *   **extras.zip:** Contiene manuales de Assembler y material complementario.
