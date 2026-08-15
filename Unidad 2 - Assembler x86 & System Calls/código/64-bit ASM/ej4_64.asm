@@ -5,10 +5,10 @@
 
 section .text
 
-GLOBAL _start
+GLOBAL suma
 EXTERN num2str
 
-_start:
+suma:
     PUSH RAX            ;SUM
     PUSH RDI            ;N
     PUSH RSI            ;CURRENT_NUMBER
@@ -22,18 +22,19 @@ _start:
     ADD RAX, RSI        ; SUM += CURRENT_NUMBER
     DEC RDI             ; N--
     INC RSI             ; CURRENT_NUMBER++
+    JMP .loop           ; Repeat the loop
 
-.done
+.done:
     ;NUM2STR(SUM)
     MOV RDI, RAX        ; Move the sum into RDI for using the num2str function
     MOV RSI, placeholder ; Move the address of the placeholder buffer into RSI
     CALL num2str        ; Call the num2str function to convert the sum to a string
 
     ;Printing of the value
-    MOV RDX, RAX        ; Move the length of the string (returned in RAX) into RDX for sys_write
+    MOV RDX, RAX        ; Move the length of the string returned in RAX into RDX for sys_write
     MOV RAX, 1          ; system call for write
-    MOV RDI, 1          ; file descriptor 1 is STDOUT
-    MOV RSI, placeholder ; Move the address of the placeholder buffer into RSI
+    MOV RDI, 1          ; STDOUT
+    MOV RSI, placeholder
     SYSCALL             ; Call the kernel to perform the write operation
 
     POP RDX             ; Restore original value of RDX
