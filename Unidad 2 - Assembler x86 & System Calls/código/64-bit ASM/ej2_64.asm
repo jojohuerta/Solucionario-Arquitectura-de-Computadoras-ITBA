@@ -6,16 +6,16 @@ _start:
 
 ;First, we want to print the message to the screen using the write system call.
 
-    mov RAX, 1                  ; system call for write in 64 bit architecture.
-    mov RDI, 1                  ; file descriptor 1 is STDOUT.
-    mov RSI, string             ; address of string to output.
-    mov RDX, string_length      ; number of bytes to be printed.
+    MOV RAX, 1                  ; system call for write in 64 bit architecture.
+    MOV RDI, 1                  ; file descriptor 1 is STDOUT.
+    MOV RSI, string             ; address of string to output.
+    MOV RDX, string_length      ; number of bytes to be printed.
     SYSCALL                     ; invoke operating system to do the write.
 
 ;We will implement the pseudo-code that was described in the comprehensive solutions manual of Unit 2.
 ;First, in order to loop, we'll need to define the label in where we will jump back to. In this case, we will call it "loop_start".
 
-    mov AL, BYTE [RSI]
+    MOV AL, BYTE [RSI]
 .loop_start:
     TEST AL, AL                  ; check if the current character is null terminator (0x00)
     JZ .loop_end                 ; were it to be the case, we jump to the end of the loop
@@ -38,15 +38,15 @@ _start:
 .loop_end:
 ;Lastly, we want to print the new string and then exit the program using the exit system call.
 
-    mov RAX, 1
-    mov RDI, 1
-    mov RSI, string
-    mov RDX, string_length
+    MOV RAX, 1
+    MOV RDI, 1
+    MOV RSI, string
+    MOV RDX, string_length
     SYSCALL
 
-    mov RAX, 60                 ; system call for exit in 64 bit architecture.
-    mov RDI, 0                  ; exit code 0.
-    SYSCALL                    ; invoke operating system to do the exit.
+    MOV RAX, 60                 ; system call for exit in 64 bit architecture.
+    MOV RDI, 0                  ; exit code 0.
+    SYSCALL                     ; invoke operating system to do the exit.
 
 section .data
 
