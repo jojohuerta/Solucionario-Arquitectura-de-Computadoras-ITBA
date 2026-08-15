@@ -4,7 +4,7 @@
 ;   RSI - 2nd Argument - The length of said array
 ;Output: void
 
-section .text:
+section .text
 
 GLOBAL selection_sort
 EXTERN menor
@@ -20,7 +20,7 @@ selection_sort:
     CMP RSI, 1
     JLE .end
 
-.loop
+.loop:
     
     CMP RSI, 1
     JLE .end
@@ -58,7 +58,7 @@ selection_sort:
     POP RBP
     RET
 
-section .data:
+section .data
 
-section .bss:
-    placeholder resb 32
+section .bss
+    placeholder RESB 32
