@@ -22,10 +22,10 @@ num2str:
     MOV ESI, [EBP+12]       ; Argument 2 (Buffer pointer) --> ESI
     
     MOV EBX, 10        
-    XOR ECX, ECX            ; Length counter
+    MOV ECX, 0            ; Length counter
 
 .divide_loop:
-    XOR EDX, EDX            ; 32-bit DIV divides EDX:EAX. Thus, we clear EDX to ensure it doesn't affect the division.
+    MOV EDX, 0            ; 32-bit DIV divides EDX:EAX. Thus, we clear EDX to ensure it doesn't affect the division.
     DIV EBX                 ; After the operation, EAX stores the quotient, EDX stores the remainder
     
     ADD EDX, 0x30           ; Add 0x30 to the remainder in order to make it a character
