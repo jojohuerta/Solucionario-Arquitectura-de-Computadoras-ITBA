@@ -9,11 +9,11 @@ _start:
     MOV EDX, test_msg_len       ; number of bytes to print
     INT 80H
 
-    ; Calling of the num2str function
-    MOV EDI, 252544             ; Argument 1: The integer to convert
-    MOV ESI, buffer             ; Argument 2: Pointer to the destination buffer
+    ; Calling of the num2str function (cdecl compliant)
+    PUSH buffer                 ; Argument 2: Pointer to the destination buffer (pushed right-to-left)
+    PUSH 252544                 ; Argument 1: The integer to convert
     CALL num2str                ; Execute the external function and returns the string length in EAX
-
+    ADD ESP, 8                  ; Clean the stack (2 arguments * 4 bytes) per cdecl standard
 
     MOV EDX, EAX                ; Move the string length (returned in EAX) into EDX for sys_write
     
@@ -21,7 +21,6 @@ _start:
     MOV EBX, 1
     MOV ECX, buffer
     INT 80H
-
 
     MOV EAX, 4
     MOV EBX, 1
