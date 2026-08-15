@@ -36,9 +36,12 @@ menor:
     CMP RSI, 0
     JLE .end
 
-    MOV ECX, [RDI]
-    CMP EBX, ECX    
-    JGE .loop_continue
+    MOV ECX, [RDI]  ;We move ARRAY[CURRENT_INDEX] to ECX
+    CMP EBX, ECX    ;We compare MIN_INDEX_VALUE with ARRAY[CURRENT_INDEX]
+                    ;Remember, CMP value1, value 2 really does value1 - value2
+    
+    JLE .loop_continue  ;If the result of MIN_INDEX_VALUE - ARRAY[CURRENT_INDEX] is 0 (they are equal) or is negative (value2 is greater than value1)
+                        ;This means that ARRAY[CURRENT_INDEX] is the same or LARGER than MIN_INDEX_VALUE, so we just skip it. 
 
     ;If we reach this point, it means that the ARRAY[CURRENT_INDEX] < MIN_INDEX_VALUE
 

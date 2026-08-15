@@ -15,8 +15,11 @@ _start:
     MOV RDI, array
     MOV RSI, array_len
     CALL menor
+    ;After calling menor, we have in RAX the Index of said array with the lowest number
+    ;We would have to load array[RAX] into RDI so we can print it
 
-    MOV RDI, RAX            
+    XOR RDI, RDI
+    MOV EDI, DWORD [array + 0x4 * RAX]  ;Remember that the numbers contained in the string are 32 bit            
     MOV RSI, placeholder    
     CALL num2str            ;We want to obtain a string with the number. Also, in RAX the length of said string is returned.
 
@@ -45,7 +48,7 @@ section .data
 
     newline DB 10
 
-    array DW 67, 69, 99, 124, 42, 88, 77, 66, 55, 44
+    array DD 67, 69, 99, 124, 42, 88, 77, 66, 55, 44 ;WARNING: DD is Define DoubleWord (4 bytes). DW is DefineWord (2 bytes).
     array_len EQU 10
 
 section .bss
