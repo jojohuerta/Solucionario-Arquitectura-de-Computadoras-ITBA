@@ -11,7 +11,7 @@ _start:
     INT 80h
 
     ; Calling of the multiplos function
-    PUSH 20                     ; Argument 2: K
+    PUSH 23                     ; Argument 2: K
     PUSH 3                      ; Argument 1: N
     CALL multiplos              ; Execute the external function
     ADD ESP, 8                  ; Clean up the stack after the function call

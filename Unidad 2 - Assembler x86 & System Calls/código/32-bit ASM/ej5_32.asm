@@ -31,10 +31,12 @@ multiplos:
     JNZ .loop_continue  ;If not, continue the loop
 .loop_print:
     ;if we reached this point, it means that CURRENT_NUMBER is a multiple of N and is smaller than or equal to K, so we print it
-    PUSH EBX
     PUSH placeholder
+    PUSH EBX
     CALL num2str
     ADD ESP, 8      ;Restore stack after num2str call. 
+
+    PUSH EBX            ;We'll have to push it because we'll need to use it for printing.
 
     ;printing of a number
     MOV EDX, EAX    ;strlen
@@ -49,6 +51,8 @@ multiplos:
     MOV ECX, newline
     MOV EDX, 1      ;length of newline
     INT 80h
+
+    POP EBX             ;Restore the value of CURRENT_NUMBER from the stack, so we can increment it and continue the loop.
 
 .loop_continue:
     INC EBX         ;CURRENT_NUMBER++
