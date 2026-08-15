@@ -2,14 +2,16 @@
 ; Arguments:
 ;   RDI: Integer to convert
 ;   RSI: Pointer to the memory buffer where the null-terminated string will be stored
+; Returns:
+;   RAX: Length of the converted string (excluding the null terminator)
+;   RSI: Pointer to the memory buffer where the null-terminated string will be stored
 
 SECTION .text
 
 GLOBAL num2str
 
 num2str:
-    PUSH RAX            ; Preserve the registers we are going to modify
-    PUSH RCX
+    PUSH RCX            ; Preserve the registers we are going to modify
     PUSH RDX
     PUSH R8
     PUSH RSI
@@ -29,6 +31,8 @@ num2str:
     TEST RAX, RAX       ; Check if the quotient has reached 0
     JNZ .divide_loop    ; If it is not zero, there are still numbers left
 
+    MOV RAX, RCX        ; Save the total string length into RAX before the write loop destroys RCX.
+
 .write_loop:
     POP RDX             ; Pop the character from the top of the stack
     MOV BYTE [RSI], DL  ; Store the byte (DL is the lowest part of RDX) into memory
@@ -43,6 +47,5 @@ num2str:
     POP R8
     POP RDX
     POP RCX
-    POP RAX
     
     RET                 ; Return from the function
