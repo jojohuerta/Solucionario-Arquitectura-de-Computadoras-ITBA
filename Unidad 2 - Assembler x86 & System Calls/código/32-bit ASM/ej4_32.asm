@@ -19,7 +19,8 @@ suma:
     PUSH ESI            ;CURRENT_NUMBER
     PUSH EDX
 
-    MOV EDI, [EBP+8]    ; Capturamos 'N' (el primer parámetro) desde la pila
+    MOV EDI, [EBP+8]    ; We use the stack to access the function argument N, which is passed in RDI. 
+                        ; In 32-bit assembly, function arguments are typically passed on the stack, so we retrieve it from the stack frame.
 
     MOV EAX, 0          ; Initialize sum to 0
     MOV ESI, 1          ; Initialize CURRENT_NUMBER to 1  
