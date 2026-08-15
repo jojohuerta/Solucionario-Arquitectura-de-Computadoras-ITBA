@@ -16,9 +16,9 @@ _start:
 
     MOV RDX, RAX                ; Move the string length (returned in RAX) into RDX for sys_write
     
-    MOV RAX, 1                  ; system call for write (sys_write)
-    MOV RDI, 1                  ; file descriptor 1 is STDOUT
-    MOV RSI, buffer             ; address of our converted string
+    MOV RAX, 1
+    MOV RDI, 1
+    MOV RSI, buffer
     SYSCALL
 
     MOV RAX, 1                 
