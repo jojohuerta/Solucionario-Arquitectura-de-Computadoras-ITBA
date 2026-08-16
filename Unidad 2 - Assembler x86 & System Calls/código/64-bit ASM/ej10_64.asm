@@ -2,6 +2,7 @@ section .text
 
 GLOBAL _start
 EXTERN num2str
+EXTERN strlen
 
 _start:
     MOV RBP, RSP
@@ -43,7 +44,7 @@ _start:
 
 .loop:
     
-    MOV R13, [R12]      ; ESI --> String of current argument 
+    MOV R13, [R12]      ; R13 --> String of current argument 
     
     ;If it's null, we reached the end of arguments
     TEST R13, R13
@@ -59,7 +60,7 @@ _start:
     MOV RSI, R13
     SYSCALL
 
-    MOV RAX, 4
+    MOV RAX, 1
     MOV RDI, 1
     MOV RSI, newline
     MOV RDX, 1
