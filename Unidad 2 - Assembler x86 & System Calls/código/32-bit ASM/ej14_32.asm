@@ -1,7 +1,6 @@
 section .text
 
 GLOBAL _start
-EXTERN num2str
 
 _start:
     MOV EBP, ESP
