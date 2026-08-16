@@ -11,7 +11,7 @@ strlen:
     PUSH EDX        ;We're going to use it as a counter
     
     XOR EDX, EDX    ;LEN = 0
-    MOV ECX, [EBP+4];ECX = string 
+    MOV ECX, [EBP+8];ECX = string 
 .loop:
     MOV BL, BYTE [ECX]
     TEST BL, BL
@@ -30,6 +30,7 @@ strlen:
 
     MOV ESP, EBP    
     POP EBP
+    RET
 
 section .data
 
