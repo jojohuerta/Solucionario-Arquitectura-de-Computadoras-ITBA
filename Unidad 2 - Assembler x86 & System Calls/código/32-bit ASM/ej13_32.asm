@@ -14,7 +14,7 @@ _start:
     INT 80h
 
     MOV EAX, 20
-    INT 80h         ;Return PID in EAX
+    INT 80h         ;Returns PID in EAX
 
     MOV EBX, BUFFER
     PUSH EBX
