@@ -6,10 +6,6 @@ EXTERN num2str
 _start:
     MOV RBP, RSP
 
-    ; Bonus track: Advanced 16 RSP alignment
-    ; Since we already saved the OS stack in RBP, we can safely round down RSP
-    ;AND RSP, -16 ;<-- Stack alignment to 16 bytes before any CALL
-
     MOV RAX, 1
     MOV RDI, 1
     MOV RSI, message
