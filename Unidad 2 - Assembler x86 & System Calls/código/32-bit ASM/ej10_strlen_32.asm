@@ -1,3 +1,8 @@
+;strlen - given a string, it determines its length
+;Parameters:
+;   EBP + 8 - Argument 1 - String that is going to be measured
+;Returns: length of a string in EAX
+
 section .text
 
 GLOBAL strlen
