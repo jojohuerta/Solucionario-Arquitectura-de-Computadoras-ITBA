@@ -41,31 +41,38 @@ _start:
 
     ;We now start printing all the arguments
 
+    MOV EDI, EBP        ; We're gonna use EDI to iterate
+    ADD EDI, 4          ; There's ARGC in EBP
+
 .loop:
     
-    MOV EDI, EBP     ; We're gonna use EDI to iterate
-    MOV ESI, [EDI]
+    MOV ESI, [EDI]      ; ESI --> String of current argument 
     
     ;If it's null, we reached the end of arguments
     TEST ESI, ESI
-    JZ loop_end
+    JZ .loop_end
 
     PUSH ESI
     CALL strlen     ; Returns in EAX the length of a string
-    ADD EBP, 4
+    ADD ESP, 4
 
+    ;Argument printing
     MOV EDX, EAX
     MOV EAX, 4
     MOV EBX, 1
     MOV ECX, ESI
     INT 80h
 
-    ADD EDI, 4
+    MOV EAX, 4
+    MOV EBX, 1
+    MOV ECX, newline
+    MOV EDX, 1
+    INT 80h
 
+    ADD EDI, 4
     JMP .loop
 
 .loop_end:
-
     
     ;Exit
     MOV EAX, 1
