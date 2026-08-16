@@ -1,8 +1,8 @@
 # Unidad 2: Assembler x86 & C
 
-En esta unidad se va a estudiar la **interaccion entre el lenguaje Assembler x86 y el lenguaje C**, explotando al maximo sus capacidades, sumado a las **convenciones** que existen en C. Para ensamblar, compilar y linkear nuestro código vamos a utilizar las herramientas **nasm** y **gcc**.
+En esta unidad se va a estudiar la **interacción entre el lenguaje Assembler x86 y el lenguaje C**, explotando al máximo sus capacidades, sumado a las **convenciones** que existen en C. Para ensamblar, compilar y linkear nuestro código vamos a utilizar las herramientas **nasm** y **gcc**.
 
-Para el desarrollo de esta unidad, se van a encontrar subido el archivo comprimido **fuentes.zip**, el cual contiene ejercicios introductorios. **Es altamente recomendable** comenzar por estos archivos antes de comenzar a resolver los ejercicios de la guía principal.
+Para el desarrollo de esta unidad, se van a encontrar subido el archivo comprimido **fuentes.zip**, el cual contiene ejercicios que es **recomendable** despues de realizar la sección "Introducción" de la guia principal. 
 
 ## Resolución y Desarrollo Teórico
 
@@ -10,7 +10,7 @@ Toda la explicación teórica y el desarrollo paso a paso de los ejercicios se e
 
 🔗 **[ITBA - Arquitectura de Computadoras - TP3 - Solucionario](https://docs.google.com/document/d/1vEm4-_HYO4XVfvOSI7PZfGIwSfEi0dJijeUXAwQRD1o/edit?usp=sharing)**
 
-El solucionario se encuentra dividido en 4 secciones: Fuentes, Introduccion, x86_32 y x86_64.
+El solucionario se encuentra dividido en 4 secciones: Introducción, Fuentes, x86_32 y x86_64.
 
 
 ---
