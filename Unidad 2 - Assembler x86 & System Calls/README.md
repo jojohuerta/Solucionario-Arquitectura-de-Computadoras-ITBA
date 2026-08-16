@@ -1,4 +1,4 @@
-# Unidad 2: Assembler x86 + System Calls
+# Unidad 2: Assembler x86 & System Calls
 
 En esta unidad se va a estudiar la programación a bajo nivel, escribiendo código directamente en lenguaje Assembler x86 y vamos a comunicarnos con el sistema operativo a través de **System Calls**. Para ensamblar y linkear nuestro código, estaremos utilizando las herramientas **nasm** y **ld**.
 
