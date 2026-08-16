@@ -3,7 +3,7 @@ section .text
 GLOBAL _start
 
 _start:
-    ; 1. Imprimimos un mensaje avisando que nos vamos a dormir
+
     MOV EAX, 4
     MOV EBX, 1
     MOV ECX, msg_start
