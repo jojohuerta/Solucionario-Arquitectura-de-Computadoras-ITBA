@@ -4,7 +4,7 @@ GLOBAL main
 EXTERN printf
 
 section .rodata
-    fmt db “Cantidad de argumentos: %d\n”, 0
+    fmt db "Cantidad de argumentos: %d",10 ,0
 
 section .text
 
