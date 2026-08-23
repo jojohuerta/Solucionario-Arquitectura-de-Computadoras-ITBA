@@ -21,7 +21,7 @@ fibonacci:
     MOV EBX, [EBP+8] ;EBX = N  
     
     ;First we test if it's lesser or equal to zero
-    CMP EBX, 0
+    TEST EBX, EBX    ;We use TEST because it's what the compiler would do for optimization
     JLE .fibo0
 
     ;Then we test if it's equal to one
