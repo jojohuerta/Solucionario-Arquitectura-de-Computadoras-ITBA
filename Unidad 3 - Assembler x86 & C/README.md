@@ -10,7 +10,7 @@ Toda la explicación teórica y el desarrollo paso a paso de los ejercicios se e
 
 🔗 **[ITBA - Arquitectura de Computadoras - TP3 - Solucionario](https://docs.google.com/document/d/1vEm4-_HYO4XVfvOSI7PZfGIwSfEi0dJijeUXAwQRD1o/edit?usp=sharing)**
 
-El solucionario se encuentra dividido en 4 secciones: Introducción, Fuentes, x86_32 y x86_64.
+El solucionario se encuentra dividido en 4 secciones: Introducción, Fuentes, x86_32 y x86_32 Avanzado.
 
 
 ---
