@@ -10,13 +10,6 @@ Este material fue desarrollado íntegramente por:
 
 Cualquier sugerencia o o corrección sobre el contenido, no duden en contactarme o dejar un comentario en los documentos de Google correspondientes. También estoy abierto a contestar dudas por medio de mi contacto.
 
-## Revisión y Agradecimientos
-
-El contenido de este proyecto cuenta con la revisión de:
-
-**Federico Gabriel Ramos** (Docente de Arquitectura de Computadoras)
-*   **Email Institucional del ITBA:** [feramos@itba.edu.ar](mailto:feramos@itba.edu.ar)
-
 ---
 
 ## Sobre este repositorio
